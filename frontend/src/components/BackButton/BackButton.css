@@ -1,0 +1,47 @@
+.back-wrapper{
+
+    max-width:1200px;
+
+    margin:20px auto 10px;
+
+}
+
+.back-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:transparent;
+
+    color:#00C6FF;
+
+    border:2px solid #00C6FF;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#00C6FF;
+
+    color:white;
+
+    transform:translateX(-4px);
+
+    box-shadow:0 8px 20px rgba(0,198,255,.3);
+
+}

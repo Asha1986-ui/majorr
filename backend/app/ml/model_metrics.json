@@ -1,0 +1,58 @@
+{
+    "model_name": "DiaSense Indian Clinical Diabetes Risk Predictor",
+    "model_version": "2.0",
+    "dataset": "India Diabetes Patient Dataset (25,500 records)",
+    "dataset_samples": 25500,
+    "target": "Diabetes",
+    "threshold": 0.45,
+    "accuracy": 0.8227,
+    "accuracy_percentage": "82.27%",
+    "precision": 0.7013,
+    "precision_percentage": "70.13%",
+    "recall": 0.7462,
+    "recall_percentage": "74.62%",
+    "specificity": 0.8571,
+    "f1_score": 0.723,
+    "roc_auc": 0.8862,
+    "pr_auc": 0.7927,
+    "confusion_matrix": [
+        [
+            2262,
+            377
+        ],
+        [
+            301,
+            885
+        ]
+    ],
+    "cv_roc_auc_mean": 0.8874,
+    "cv_roc_auc_std": 0.0047,
+    "train_samples": 21675,
+    "test_samples": 3825,
+    "predictors": {
+        "categorical": [
+            "Patient_Group",
+            "Gender"
+        ],
+        "numerical": [
+            "Age",
+            "BMI",
+            "Physical_Activity_Hours",
+            "Daily_Sugar_Intake",
+            "Fast_Food_Frequency",
+            "Sleep_Hours",
+            "Family_History",
+            "Blood_Pressure",
+            "HbA1c",
+            "Fasting_Glucose",
+            "Monthly_Income",
+            "Month",
+            "HbA1c_FastingGlucose",
+            "Glucose_BMI",
+            "Age_BMI",
+            "High_HbA1c",
+            "High_Glucose",
+            "Lifestyle_Index"
+        ]
+    }
+}

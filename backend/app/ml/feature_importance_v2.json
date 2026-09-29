@@ -1,0 +1,23 @@
+{
+  "Age": 0.00926,
+  "BMI": 0.06171,
+  "Physical_Activity_Hours": 0.08973,
+  "Daily_Sugar_Intake": 0.27091,
+  "Fast_Food_Frequency": 0.04302,
+  "Sleep_Hours": 0.01552,
+  "Blood_Pressure": 0.02506,
+  "HbA1c": 0.07219,
+  "Fasting_Glucose": 0.02683,
+  "Monthly_Income": 0.04439,
+  "Month": 0.00589,
+  "Sugar_x_Activity": 0.14724,
+  "Age_x_BMI": 0.00946,
+  "FamilyHistory_x_Age": 0.04289,
+  "Family_History": 0.05045,
+  "Patient_Group": 0.04742,
+  "Gender": 0.00064,
+  "BMI_Category": 0.01243,
+  "HbA1c_Category": 0.01876,
+  "Glucose_Category": 0.00498,
+  "Activity_Category": 0.00122
+}

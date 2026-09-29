@@ -1,0 +1,116 @@
+.about-page {
+  padding: 3rem 1.5rem 5rem 1.5rem;
+}
+
+.about-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.about-hero h1 {
+  font-size: clamp(1.8rem, 2.8vw, 2.3rem);
+  font-weight: 800;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.about-hero p {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+.about-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.about-card h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.about-card p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.spec-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.spec-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  flex-shrink: 0;
+}
+
+.spec-icon.cyan { background: rgba(14, 165, 233, 0.15); color: #38bdf8; }
+.spec-icon.emerald { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+
+.spec-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 0.8rem;
+  line-height: 1.35;
+}
+
+.spec-card p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.65;
+  margin-top: auto;
+}
+
+.spec-card strong {
+  color: #cbd5e1;
+}
+
+.about-disclaimer {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}

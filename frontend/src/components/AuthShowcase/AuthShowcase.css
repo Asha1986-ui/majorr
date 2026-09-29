@@ -1,0 +1,523 @@
+.auth-showcase-panel {
+  position: relative;
+  background: linear-gradient(150deg, #134e96 0%, #0369a1 40%, #0c4a6e 85%, #082f49 100%);
+  padding: 3rem 2.5rem 2.2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  min-height: 640px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 0 80px rgba(14, 165, 233, 0.15);
+}
+
+/* Dynamic Ambient Glow Mesh */
+.showcase-mesh-glow-1 {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.showcase-mesh-glow-2 {
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(129, 140, 248, 0.3) 0%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.showcase-mesh-glow-3 {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.2) 0%, transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+/* Top Header Branding */
+.showcase-top-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 5;
+}
+
+.brand-icon-capsule {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.brand-pulse-icon {
+  color: #ffffff;
+  font-size: 1.45rem;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+}
+
+.brand-text-block h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+.brand-text-block span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #bae6fd;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* Hero Headings */
+.showcase-hero-heading {
+  margin-bottom: 1.8rem;
+  position: relative;
+  z-index: 5;
+}
+
+.showcase-hero-heading h2 {
+  font-size: 1.95rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.28;
+  margin-bottom: 0.65rem;
+  letter-spacing: -0.5px;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #e0f2fe 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.showcase-hero-heading p {
+  font-size: 0.95rem;
+  color: #e0f2fe;
+  line-height: 1.55;
+  margin: 0;
+  opacity: 0.92;
+}
+
+/* Main Visual Area */
+.showcase-visual-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  margin-bottom: 1.8rem;
+  position: relative;
+  z-index: 5;
+}
+
+/* Left Feature List */
+.showcase-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.feature-pill-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 0.75rem 0.95rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+}
+
+.feature-pill-card:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateX(4px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.pill-icon-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.pill-icon-circle.cyan {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.5);
+}
+
+.pill-icon-circle.blue {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.pill-icon-circle.indigo {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+.pill-text h4 {
+  margin: 0 0 0.15rem 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pill-text p {
+  margin: 0;
+  font-size: 0.76rem;
+  color: #bae6fd;
+  line-height: 1.35;
+}
+
+/* Right Medical Visual Display */
+.medical-visual-display {
+  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Radar Rings */
+.radar-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed rgba(56, 189, 248, 0.3);
+  pointer-events: none;
+}
+
+.radar-outer {
+  width: 220px;
+  height: 220px;
+  border-color: rgba(56, 189, 248, 0.2);
+  animation: rotateRadar 25s linear infinite;
+}
+
+.radar-middle {
+  width: 170px;
+  height: 170px;
+  border-color: rgba(14, 165, 233, 0.35);
+  animation: rotateRadar 15s linear infinite reverse;
+}
+
+.radar-inner {
+  width: 120px;
+  height: 120px;
+  border-color: rgba(129, 140, 248, 0.4);
+}
+
+@keyframes rotateRadar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Organ Hologram Bubble */
+.pancreas-hologram-card {
+  position: absolute;
+  top: 8px;
+  right: 4px;
+  z-index: 10;
+}
+
+.hologram-bubble {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(244, 63, 94, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(244, 63, 94, 0.5);
+  border-radius: 20px;
+  padding: 0.35rem 0.7rem;
+  box-shadow: 0 4px 14px rgba(244, 63, 94, 0.3);
+  animation: floatBubble 3s ease-in-out infinite;
+}
+
+.organ-holo-icon {
+  color: #fda4af;
+  font-size: 0.9rem;
+}
+
+.organ-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffe4e6;
+  white-space: nowrap;
+}
+
+@keyframes floatBubble {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
+/* Designed Glucometer Device Mockup */
+.glucometer-device-mockup {
+  position: relative;
+  z-index: 8;
+}
+
+.glucometer-case {
+  width: 125px;
+  height: 165px;
+  background: linear-gradient(160deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+  border-radius: 28px 28px 36px 36px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 
+    0 14px 28px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(14, 165, 233, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.4);
+  padding: 0.65rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.glucometer-screen {
+  width: 100%;
+  height: 84px;
+  background: #091322;
+  border-radius: 14px;
+  border: 1.5px solid rgba(56, 189, 248, 0.4);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  padding: 0.4rem 0.45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blood-icon {
+  color: #ef4444;
+  font-size: 0.7rem;
+  filter: drop-shadow(0 0 4px rgba(239, 68, 68, 0.8));
+}
+
+.screen-tag {
+  font-size: 0.58rem;
+  font-weight: 800;
+  color: #38bdf8;
+  letter-spacing: 0.6px;
+}
+
+.screen-reading {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.reading-value {
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: #f0fdf4;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+  font-family: monospace, sans-serif;
+  letter-spacing: -1px;
+}
+
+.reading-unit {
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: #93c5fd;
+}
+
+.screen-status-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: rgba(16, 185, 129, 0.15);
+  border-radius: 6px;
+  padding: 0.15rem 0.3rem;
+}
+
+.status-dot.green {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 6px #10b981;
+}
+
+.status-label {
+  font-size: 0.58rem;
+  font-weight: 700;
+  color: #34d399;
+}
+
+/* Device Buttons */
+.device-controls {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.45rem;
+}
+
+.dev-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 0.55rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+
+/* Test Strip Mockup */
+.device-test-strip {
+  position: absolute;
+  bottom: -22px;
+  width: 18px;
+  height: 24px;
+  background: #f1f5f9;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+.strip-sensor-pad {
+  width: 10px;
+  height: 5px;
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+  border-radius: 2px;
+}
+
+/* Live ECG Telemetry Wave Card */
+.ecg-waveform-card {
+  position: absolute;
+  bottom: -15px;
+  left: -20px;
+  right: -20px;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(14px);
+  border-radius: 12px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 0.45rem 0.65rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 12;
+}
+
+.ecg-svg {
+  width: 100%;
+  height: 28px;
+  display: block;
+}
+
+.ecg-telemetry-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-top: 0.25rem;
+}
+
+.live-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulseGreen 1.5s infinite;
+}
+
+@keyframes pulseGreen {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+/* Bottom Social Proof Card */
+.showcase-bottom-card {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 0.8rem 1.1rem;
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 5;
+  margin-bottom: 1rem;
+}
+
+.users-icon-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+/* Footer Copyright Note */
+.showcase-footer-note {
+  font-size: 0.78rem;
+  color: #bae6fd;
+  opacity: 0.8;
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 900px) {
+  .showcase-visual-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .medical-visual-display {
+    height: 180px;
+  }
+}

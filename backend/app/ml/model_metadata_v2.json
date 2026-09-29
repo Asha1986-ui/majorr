@@ -1,0 +1,84 @@
+{
+  "model_version": "v2",
+  "training_date": "2026-09-26T22:37:12.721675",
+  "dataset_name": "india_diabetes_patient_dataset.csv",
+  "dataset_url": "https://www.kaggle.com/datasets/sridevilavanyacse/india-diabetes-patient-dataset",
+  "rows_after_cleaning": 25010,
+  "positive_cases": 7750,
+  "positive_rate_pct": 31.0,
+  "feature_names": [
+    "Patient_Group",
+    "Age",
+    "Gender",
+    "BMI",
+    "Physical_Activity_Hours",
+    "Daily_Sugar_Intake",
+    "Fast_Food_Frequency",
+    "Sleep_Hours",
+    "Family_History",
+    "Blood_Pressure",
+    "HbA1c",
+    "Fasting_Glucose",
+    "Monthly_Income",
+    "Month",
+    "BMI_Category",
+    "HbA1c_Category",
+    "Glucose_Category",
+    "Activity_Category",
+    "Sugar_x_Activity",
+    "Age_x_BMI",
+    "FamilyHistory_x_Age"
+  ],
+  "target_name": "Diabetes",
+  "train_size": 21258,
+  "val_size": 3752,
+  "test_size": 3752,
+  "selected_model": "GradientBoostingClassifier",
+  "model_params": {
+    "n_estimators": 300,
+    "max_depth": 4,
+    "learning_rate": 0.08,
+    "subsample": 0.8,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt"
+  },
+  "cv_roc_auc_mean": 0.8835,
+  "cv_f1_mean": 0.7059,
+  "decision_threshold": 0.31,
+  "threshold_strategy": "max-F1 on validation set",
+  "final_test_metrics": {
+    "accuracy": 0.8081,
+    "precision": 0.6563,
+    "recall": 0.7997,
+    "specificity": 0.8119,
+    "f1": 0.7209,
+    "roc_auc": 0.8852,
+    "pr_auc": 0.7904,
+    "confusion_matrix": [
+      [
+        2102,
+        487
+      ],
+      [
+        233,
+        930
+      ]
+    ],
+    "threshold_used": 0.31
+  },
+  "feature_importance_top10": {
+    "Daily_Sugar_Intake": 0.27091,
+    "Sugar_x_Activity": 0.14724,
+    "Physical_Activity_Hours": 0.08973,
+    "HbA1c": 0.07219,
+    "BMI": 0.06171,
+    "Family_History": 0.05045,
+    "Patient_Group": 0.04742,
+    "Monthly_Income": 0.04439,
+    "Fast_Food_Frequency": 0.04302,
+    "FamilyHistory_x_Age": 0.04289
+  },
+  "random_seed": 42,
+  "important_disclaimer": "This model is a health risk SCREENING tool only. Results must not be presented as a medical diagnosis. Always recommend consulting a qualified healthcare professional."
+}
